@@ -3015,10 +3015,22 @@ textarea.form-control{
     width: 100%;
     margin-top: 120px;
 }
-.banner .bread-crumb{
+.banner .bread-crumb {
+    text-align: right;
+}
+
+.banner .bread-crumb h6 {
+    color: #fff;
+    font-size: 39px;
+    text-align: right;
+    padding-top: 37px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 0px;
     position: relative;
 }
-.banner .bread-crumb h6 {
+/* */
+/* .banner .bread-crumb h6 {
     color: #fff;
     font-size: 39px;
     padding-top: 37px;
@@ -3027,6 +3039,7 @@ textarea.form-control{
     margin-bottom: 0px;
     position: relative;
    display: inline-block;
+   text-align: right;
 }
 .banner .bread-crumb h6::before{
     content: "";
@@ -3037,7 +3050,7 @@ textarea.form-control{
     bottom: 22px;
     display: inline-block;
     right: 0px;
-}
+}  */
 .banner .bread-crumb p {
     color: #fff;
     font-size: 18px;
