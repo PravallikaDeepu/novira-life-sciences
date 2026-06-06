@@ -3015,15 +3015,18 @@ textarea.form-control{
     width: 100%;
     margin-top: 120px;
 }
+.banner .bread-crumb{
+    position: relative;
+}
 .banner .bread-crumb h6 {
     color: #fff;
     font-size: 39px;
-    text-align: right;
     padding-top: 37px;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: 0px;
     position: relative;
+   display: inline-block;
 }
 .banner .bread-crumb h6::before{
     content: "";
@@ -3033,7 +3036,7 @@ textarea.form-control{
     background: #fff;
     bottom: 22px;
     display: inline-block;
-    right: 355px;
+    right: 0px;
 }
 .banner .bread-crumb p {
     color: #fff;
