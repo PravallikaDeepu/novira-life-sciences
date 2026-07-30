@@ -38,74 +38,32 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             HEADER
     ========================================= -->
 
-    <header class="header">
+<header class="header">
+    <div class="container navbar">
 
-        <div class="container navbar">
-
-            <!-- LOGO -->
-
-            <div class="logo">
-                <img src="./images/logo.png" alt="" srcset="">
-                <!-- <h2>Novira</h2> -->
-            </div>
-
-            <!-- MENU -->
-
-            <nav class="nav-menu">
-
-                <ul>
-
-                    <li>
-                        <a href="/" class="active">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Therapeutic Areas
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            About Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Global Reach
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Careers
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <!-- BUTTONS -->
-<!-- 
-            <div class="nav-buttons">
-                <a href="#" class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div> -->
-
-            <!-- MOBILE -->
-
-            <div class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
         </div>
 
-    </header>
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="#therapy-section">Therapeutic Areas</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#">Global Reach</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
 
     <!-- =========================================
             HERO SECTION
@@ -221,7 +179,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
         THERAPEUTIC CARDS SECTION
 ========================================= -->
 
-    <section class="therapy-section">
+    <section class="therapy-section" id="therapy-section">
 
         <div class="container">
             <div class="our-areas text-center">
@@ -739,7 +697,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
                 <!-- CARD 1 -->
 
-                <a href="clinical-trial-operations.html" class="therapy-card active-card">
+                <a href="#" class="therapy-card active-card">
 
                     <div class="therapy-image">
 
@@ -771,7 +729,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
                 <!-- CARD 2 -->
 
-                <a href="clinical-data-management.html" class="therapy-card">
+                <a href="#" class="therapy-card">
 
                     <div class="therapy-image">
 
@@ -803,7 +761,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
                 <!-- CARD 3 -->
 
-                <a href="pharmacovigilance.html" class="therapy-card">
+                <a href="#" class="therapy-card">
 
                     <div class="therapy-image">
 
@@ -1095,7 +1053,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
         NOVIRA TEAM SECTION
 ========================================= -->
 
-<section class="novira-team-section">
+<section class="novira-team-section" id="about-us">
 
     <div class="container">
 
@@ -1219,6 +1177,77 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                         </p>
                         <div class="read-btn">
                             <a href="dr-okechukwu.html">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- TEAM MEMBER 4 -->
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+
+                <div class="team-card">
+
+                    <div class="team-image">
+
+                        <img src="./images/our-team/dr-tasannuma-ahsan.jpeg"
+                             alt="Advisor ">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <h3>
+                            Dr. Tasannuma Ahsan
+                        </h3>
+
+                        <span>
+                           Advisor
+                        </span>
+
+                        <p>
+                        MBBS (University of Dhaka), MSc in Cancer Research and Precision Oncology (University of Glasgow, UK)
+
+                        </p>
+                        <div class="read-btn">
+                            <a href="dr-tasannuma-ahsan.html">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TEAM MEMBER 5 -->
+                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+
+                <div class="team-card">
+
+                    <div class="team-image">
+
+                        <img src="./images/our-team/dr-avula-chandra-mouli.jpeg"
+                             alt="Pharmacovigilance & Drug Safety Advisor ">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <h3>
+                            Dr. Avula Chandra Mouli
+                        </h3>
+
+                        <span>
+                           Pharmacovigilance & Drug Safety Advisor 
+                        </span>
+
+                        <p>
+                        M.Pharm
+
+                        </p>
+                        <div class="read-btn">
+                            <a href="dr-avula-chandra-mouli.html">Read More</a>
                         </div>
                     </div>
 
@@ -1574,23 +1603,23 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
                     <div class="social-icons">
 
-                        <a href="#" aria-label="Linkedin" title="LinkedIn">
+                        <a href="https://www.linkedin.com/company/novira-life-sciences-pvt-limited" aria-label="Linkedin" title="LinkedIn" target="_blank">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
 
-                        <a href="#" aria-label="Facebook" title="Facebook">
+                        <!-- <a href="#" aria-label="Facebook" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
-                        </a>
+                        </a> -->
 
-                        <a href="#" aria-label="Youtube" title="Youtube">
+                        <a href="https://www.youtube.com/@girishganesh3761" aria-label="Youtube" title="Youtube" target="_blank">
                             <i class="fab fa-youtube"></i>
                         </a>
 
-                        <a href="#" aria-label="Instagram" title="Instagram">
+                        <!-- <a href="#" aria-label="Instagram" title="Instagram">
                             <i class="fab fa-instagram"></i>
-                        </a>
+                        </a> -->
 
-                        <a href="#" aria-label="Twitter" title="Twitter">
+                        <a href="https://x.com/novirasciences" aria-label="Twitter" title="Twitter" target="_blank">
                             <i class="fab fa-x-twitter"></i>
                         </a>
 
@@ -1608,7 +1637,7 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                     Stay updated with our latest clinical innovations and healthcare solutions.
                 </p>
 
-                <a href="subscription.html">
+                <a href="#">
                     Manage your subscription
                 </a>
 
@@ -1618,27 +1647,27 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
             <div class="footer-links">
 
-                <a href="terms.html">
+                <a href="#">
                     Terms of Access
                 </a>
 
-                <a href="legal.html">
+                <a href="#">
                     Legal Disclaimer
                 </a>
 
-                <a href="privacy.html">
+                <a href="#">
                     Data Privacy Policy
                 </a>
 
-                <a href="conduct.html">
+                <a href="#">
                     Code of Conduct
                 </a>
 
-                <a href="cookies.html">
+                <a href="#">
                     Cookie Notice
                 </a>
 
-                <a href="sitemap.html">
+                <a href="#">
                     Sitemap
                 </a>
 
@@ -1704,6 +1733,21 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
     });
 
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const icon = menuToggle.querySelector("i");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+
+    if (navMenu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+});
 </script>
 </body>
 
