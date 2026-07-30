@@ -38,74 +38,32 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
             HEADER
     ========================================= -->
 
-    <header class="header">
+<header class="header">
+    <div class="container navbar">
 
-        <div class="container navbar">
-
-            <!-- LOGO -->
-
-            <div class="logo">
-                <img src="./images/logo.png" alt="" srcset="">
-                <!-- <h2>Novira</h2> -->
-            </div>
-
-            <!-- MENU -->
-
-            <nav class="nav-menu">
-
-                <ul>
-
-                    <li>
-                        <a href="/" class="active">
-                            Home
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#therapy-section">
-                            Therapeutic Areas
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#about-us">
-                            About Us
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Global Reach
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            Careers
-                        </a>
-                    </li>
-
-                </ul>
-
-            </nav>
-
-            <!-- BUTTONS -->
-<!-- 
-            <div class="nav-buttons">
-                <a href="#" class="search-btn">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </a>
-            </div> -->
-
-            <!-- MOBILE -->
-
-            <div class="menu-toggle">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-
+        <!-- Logo -->
+        <div class="logo">
+            <img src="./images/logo.png" alt="Logo">
         </div>
 
-    </header>
+        <!-- Mobile Menu Button -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="#therapy-section">Therapeutic Areas</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#">Global Reach</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
 
     <!-- =========================================
             HERO SECTION
@@ -1225,6 +1183,77 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
                 </div>
 
             </div>
+
+            <!-- TEAM MEMBER 4 -->
+             <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+
+                <div class="team-card">
+
+                    <div class="team-image">
+
+                        <img src="./images/our-team/dr-tasannuma-ahsan.jpeg"
+                             alt="Advisor ">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <h3>
+                            Dr. Tasannuma Ahsan
+                        </h3>
+
+                        <span>
+                           Advisor
+                        </span>
+
+                        <p>
+                        MBBS (University of Dhaka), MSc in Cancer Research and Precision Oncology (University of Glasgow, UK)
+
+                        </p>
+                        <div class="read-btn">
+                            <a href="dr-tasannuma-ahsan.html">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TEAM MEMBER 5 -->
+                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-12">
+
+                <div class="team-card">
+
+                    <div class="team-image">
+
+                        <img src="./images/our-team/dr-avula-chandra-mouli.jpeg"
+                             alt="Pharmacovigilance & Drug Safety Advisor ">
+
+                    </div>
+
+                    <div class="team-content">
+
+                        <h3>
+                            Dr. Avula Chandra Mouli
+                        </h3>
+
+                        <span>
+                           Pharmacovigilance & Drug Safety Advisor 
+                        </span>
+
+                        <p>
+                        M.Pharm
+
+                        </p>
+                        <div class="read-btn">
+                            <a href="dr-avula-chandra-mouli.html">Read More</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
 
     </div>
@@ -1704,6 +1733,21 @@ href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.m
 
     });
 
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+const icon = menuToggle.querySelector("i");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+
+    if (navMenu.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
+    } else {
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+    }
+});
 </script>
 </body>
 
