@@ -43,8 +43,8 @@
     .menu-toggle {
 
         display: block;
-
-        color: #fff;
+        margin-right: 22px;
+        /* color: #fff; */
 
         font-size: 28px;
 
