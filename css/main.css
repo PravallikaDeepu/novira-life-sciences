@@ -3015,10 +3015,6 @@ textarea.form-control{
     width: 100%;
     margin-top: 120px;
 }
-.banner .bread-crumb {
-    text-align: right;
-}
-
 .banner .bread-crumb h6 {
     color: #fff;
     font-size: 39px;
@@ -3029,19 +3025,7 @@ textarea.form-control{
     margin-bottom: 0px;
     position: relative;
 }
-/* */
-/* .banner .bread-crumb h6 {
-    color: #fff;
-    font-size: 39px;
-    padding-top: 37px;
-    text-transform: uppercase;
-    font-weight: 400;
-    margin-bottom: 0px;
-    position: relative;
-   display: inline-block;
-   text-align: right;
-}
-.banner .bread-crumb h6::before{
+/* .banner .bread-crumb h6::before{
     content: "";
     position: absolute;
     height: 1px;
@@ -3049,8 +3033,8 @@ textarea.form-control{
     background: #fff;
     bottom: 22px;
     display: inline-block;
-    right: 0px;
-}  */
+    right: 355px;
+} */
 .banner .bread-crumb p {
     color: #fff;
     font-size: 18px;
@@ -3128,4 +3112,46 @@ textarea.form-control{
 }
 .doc-qualification p{
     font-size: 17px;
+}
+@media screen and (min-width: 320px) {
+    .logo img {
+        height: 58px;
+        width: 100%;
+    }
+        .menu-toggle {
+        display: block;
+        color: #000;
+        font-size: 28px;
+        cursor: pointer;
+    }
+}
+/* Desktop */
+.nav-menu {
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 28px;
+    }
 }
